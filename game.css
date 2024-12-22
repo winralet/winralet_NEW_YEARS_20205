@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: "Caveat";
+}
+
+
+@font-face {
+  font-family: 'zanesennyj';
+  src: url(/fonts/zanesennyj.woff) format('woff'),
+      url(/fonts/zanesennyj.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #f2f7f7d0;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+#time {
+  font-size: 3rem; /* Увеличиваем размер шрифта для лучшей видимости */
+  color: #f2f7f7d0; /* Цвет текста таймера */
+}
+
+a {
+  color:#f2f7f7d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2779a7;
+  transition: all 0.275s ease-in;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #f2f7f7d0;
+  color: #f2f7f7d0;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover {
+  border: 2px solid;
+  color: #2779a7;
+  transition: all 0.275s ease-in;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #2779a7;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background:url(textyr/images.jpg);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #f0efbfad;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/9120/9120864.png" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>С новым годом</title>
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="box-text">
+            <p class="title">С новым годом !</p>
+            <button id="scroll-btn" class="btn">
+                До нового года осталось...
+                <img class="btn-hat" src="https://res.cloudinary.com/freecodez/image/upload/v1701705719/images/guidvrtf8kre7pc3jdk5.webp" alt="">
+            </button>
+            <button id="snowball-btn" class="btn" onclick="window.location.href='game.html';">
+                Игра в снежки
+                <img class="btn-hat" src="https://res.cloudinary.com/freecodez/image/upload/v1701705719/images/guidvrtf8kre7pc3jdk5.webp" alt="">
+            </button>
+        </div>
+        
+        <div class="cloud" id="cloud1"></div>
+        <div class="cloud" id="cloud2"></div>
+        <div class="cloud" id="cloud3"></div>
+        <div class="cloud" id="cloud4"></div>
+        <div class="cloud" id="cloud5"></div>
+        <div class="cloud" id="cloud6"></div>
+        <div class="cloud" id="cloud7"></div>
+        <div class="cloud" id="cloud8"></div>
+        <div class="cloud" id="cloud9"></div>
+        <div class="cloud" id="cloud10"></div>
+
+        <div class="cloud" id="cloud1_down"></div>
+        <div class="cloud" id="cloud2_down"></div>
+        <div class="cloud" id="cloud3_down"></div>
+        <div class="cloud" id="cloud4_down"></div>
+        <div class="cloud" id="cloud5_down"></div>
+        <div class="cloud" id="cloud6_down"></div>
+        <div class="cloud" id="cloud7_down"></div>
+        <div class="cloud" id="cloud8_down"></div>
+        <div class="cloud" id="cloud9_down"></div>
+        <div class="cloud" id="cloud10_down"></div>
+        <div id="countdownContainer">
+            <h1 id="headline">
+              <span>
+                ДО НОВОГО ГОДА ОСТАЛОСЬ
+                <img class="btn-hat" src="https://res.cloudinary.com/freecodez/image/upload/v1701705719/images/guidvrtf8kre7pc3jdk5.webp" alt="">
+              </span>
+            </h1>
+            <div id="countdown">
+              <ul>
+                <li><span id="days"></span>Дней</li>
+                <li><span id="hours"></span>Часов</li>
+                <li><span id="minutes"></span>Минут</li>
+                <li><span id="seconds"></span>Секунд</li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
